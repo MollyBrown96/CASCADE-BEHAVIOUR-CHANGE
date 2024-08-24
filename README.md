@@ -32,7 +32,7 @@ Explore a wide range of case studies categorised by the KMGBF biodiversity targe
 
 ## Data Sources
 
-The data used in this application is based on an extensive review of approximately 75 case studies drawn from the "Behaviour Change for Achieving the Kunming-Montreal Global Biodiversity Framework" report. The interventions target key biodiversity goals outlined in the KM-GBF targets 4, 5, 10, and 16.
+The data used in this application is based on an extensive review of approximately 75 case studies drawn from the "Behaviour Change for Achieving the Kunming-Montreal Global Biodiversity Framework" report. URL links to all data sources used are provided in the case studies tab of the application.
 
 ## License
 
