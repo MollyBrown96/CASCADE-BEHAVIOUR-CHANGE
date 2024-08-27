@@ -2,7 +2,7 @@
 
 ## Overview
 
-This R application supports access to data sources related to the evidence synthesis on behaviour change interventions for biodiversity conservation. It is based on the "Behaviour Change for Achieving the Kunming-Montreal Global Biodiversity Framework" evidence synthesis, which presents successful interventions designed to influence human behaviour to meet biodiversity conservation targets. The app aims to provide users with tools to explore case studies, examine intervention strategies, and understand the effectiveness of behaviour change efforts on biodiversity outcomes.
+This R application supports access to data sources related to the "Behaviour Change for Achieving the Kunming-Montreal Global Biodiversity Framework" evidence synthesis, which presents successful interventions designed to influence human behaviour to meet biodiversity conservation targets. The app aims to provide users with tools to explore case studies, examine intervention strategies, and understand the effectiveness of behaviour change efforts on biodiversity outcomes.
 
 ## Features
 
