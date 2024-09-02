@@ -133,7 +133,7 @@ ui <- fluidPage(
              ),
              
              # Add banner image
-             HTML("<img src='boats.jpg' class='banner-image' alt='Banner image'/>")
+             HTML("<img src='boats1.jpg' class='banner-image' alt='Banner image'/>")
     ),
     
     tabPanel("Case Studies",
@@ -173,13 +173,18 @@ ui <- fluidPage(
              tags$ul(
                tags$li(tags$a(href = "https://www.bi.team/publications/behavior-change-for-nature-a-behavioral-science-toolkit-for-practitioners/", target = "_blank", "Behavior Change For Nature: A Behavioral Science Toolkit for Practitioners")),
                tags$li(tags$a(href = "https://behavior.rare.org/resources/behavior-change-levers/", target = "_blank", "Levers of Behavior Change: A Guide to the Science and Applications")),
-               tags$li(tags$a(href = "https://www.behaviourchangewheel.com/", target = "_blank", "The Behaviour Change Wheel"))
+               tags$li(tags$a(href = "https://www.behaviourchangewheel.com/", target = "_blank", "The Behaviour Change Wheel")),
+               tags$li(tags$a(href = "https://www.behaviourchange.net/docs/pin-2017-behaviour-change-toolkit_mail.pdf", target = "_blank", "Behaviour Change Toolkit: for International Development Practitioners")),
+               tags$li(tags$a(href = "https://www.changewildlifeconsumers.org/change/behaviour-change-for-conservation-online-course/", target = "_blank", "Behaviour Change for Conservation: Online Course"))
              ),
              
              h5("How do I evaluate a behaviour change intervention?"),
              tags$ul(
                tags$li(tags$a(href = "https://doi.org/10.1177/1524500417734806", target = "_blank", "Does It Work for Biodiversity? Experiences and Challenges in the Evaluation of Social Marketing Campaigns")), # Social marketing resource
-               tags$li("Education") # Placeholder for the "Education" resource
+               tags$li(tags$a(href = "https://prevention-collaborative.org/wp-content/uploads/2021/08/Copy-of-Soul_City_Institute_2013-1.pdf", target ="_blank", "Edutainment: Using stories & media for social action and behaviour change")), # Education resource
+               tags$li(tags$a(href = "https://spatialagent.org/GWPBehaviourChange/", target = "_blank", "Behavior Change for Wildlife Conservation")), # e-library for BC led by GEF WB
+               tags$li(tags$a(href = "https://breakthroughactionandresearch.org/resource-library/social-and-behavior-change-monitoring-guidance/#toggle-id-4", target = "_blank", "Social and Behavior Monitoring Guidance")), # SBC Monitoring by Breakthrough ACTION
+               tags$li(tags$a(href = "https://thecompassforsbc.org/how-to-guide/how-to-use-a-theory-of-change-to-monitor-and-evaluate-social-and-behavior-change-programs", target = "_blank", "How to Use a Theory of Change to Monitor and Evaluate Social and Behavior Change Programs")), # ToC for SBC Monev
              ),
              
              h5("Where can I find further evidence of behaviour change interventions?"),
@@ -187,11 +192,13 @@ ui <- fluidPage(
                tags$li(tags$a(href = "https://changewildlifeconsumers.org/", target = "_blank", "Change Wildlife Consumers")),
                tags$li(tags$a(href = "https://behavior.rare.org/resources/", target = "_blank", "Center for Behavior & the Environment (RARE)")),
                tags$li(tags$a(href = "https://www.bi.team/our-work/publications/", target = "_blank", "Behavioural Insights Team")),
-               tags$li(tags$a(href = "https://www.usaidrdw.org/resources/consumer-demand-reduction", target = "_blank", "USAID Reducing Demand for Wildlife"))
+               tags$li(tags$a(href = "https://www.usaidrdw.org/resources/consumer-demand-reduction", target = "_blank", "USAID Reducing Demand for Wildlife")),
+               tags$li(tags$a(href = "https://www.sbcguidance.org/", target = "_blank", "UNICEF Social + Behavior Change")),
+               tags$li(tags$a(href = "https://thedecisionlab.com/biases", target = "_blank", "Cognitive Biases: A list of the most relevant biases in behavioral economics")),
              ),
              
-    # Add banner image
-    HTML("<img src='sheep.jpg' class='banner-image' alt='Banner image'/>")
+             # Add banner image
+             HTML("<img src='sheep.jpg' class='banner-image' alt='Banner image'/>")
     )
   )
 )
@@ -310,10 +317,10 @@ server <- function(input, output, session) {
       file.copy("www/evidence_synthesis_report.pdf", file)
     }
   )
-
-    content = function(file) {
-      write.csv(case_studies_data, file, row.names = FALSE)
-    }
+  
+  content = function(file) {
+    write.csv(case_studies_data, file, row.names = FALSE)
+  }
 }
 
 # Run the application ----
