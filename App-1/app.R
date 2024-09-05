@@ -162,7 +162,6 @@ ui <- fluidPage(
              dataTableOutput("caseStudiesTable")
     ),
     
-    
     # Adding the new section for behaviour change resources
     tabPanel("Further Resources",
              h3("Further Resources"),
@@ -195,6 +194,15 @@ ui <- fluidPage(
                tags$li(tags$a(href = "https://www.usaidrdw.org/resources/consumer-demand-reduction", target = "_blank", "USAID Reducing Demand for Wildlife")),
                tags$li(tags$a(href = "https://www.sbcguidance.org/", target = "_blank", "UNICEF Social + Behavior Change")),
                tags$li(tags$a(href = "https://thedecisionlab.com/biases", target = "_blank", "Cognitive Biases: A list of the most relevant biases in behavioral economics")),
+             ),
+             
+             h5("Where can I find course on behaviour change interventions?"),
+             tags$ul(
+               tags$li(tags$a(href = "https://behavior.rare.org/training/", target = "_blank", "Training - Behavior Change for the Environment - RARE")),
+               tags$li(tags$a(href = "https://breakthroughactionandresearch.org/resource-library/social-and-behavior-change-101-course/", target = "_blank", "Social and Behavior Change 101: An Introduction")),
+               tags$li(tags$a(href = "https://agora.unicef.org/course/info.php?id=35185", target = "_blank", "Social and Behaviour Change (SBC) Theory and Practice - UNICEF")),
+               tags$li(tags$a(href = "https://climate.bds.com/behavior-change-for-climate-action-101-3-month-subscription-2", target = "_blank", "Behavior Change for Climate Action 101")),
+               tags$li(tags$a(href = "https://www.changewildlifeconsumers.org/change/behaviour-change-for-conservation-online-course/", target = "_blank", "Behaviour Change for Conservation - TRAFFIC")),
              ),
              
              # Add banner image
@@ -243,11 +251,11 @@ server <- function(input, output, session) {
     data <- case_studies_data
     
     if (!is.null(input$filterTarget) && input$filterTarget != "") {
-      data <- data[data$`Main.KM.GBF.Target` == input$filterTarget, ]
+      data <- data[data$`Main KM-GBF Target` == input$filterTarget, ]
     }
     
     if (!is.null(input$filterAudience) && input$filterAudience != "") {
-      data <- data[data$`Target.Audience` == input$filterAudience, ]
+      data <- data[data$`Target Audience` == input$filterAudience, ]
     }
     
     return(data)
@@ -311,7 +319,7 @@ server <- function(input, output, session) {
   # Handle the file download for the Evidence Synthesis report
   output$downloadPDF <- downloadHandler(
     filename = function() {
-      "evidence_synthesis_report.pdf"
+      "Brown et al. (2024) Behaviour Change for Achieving the Kunming-Montreal Global Biodiversity Framework.pdf"
     },
     content = function(file) {
       file.copy("www/evidence_synthesis_report.pdf", file)
