@@ -233,10 +233,20 @@ server <- function(input, output, session) {
     case_studies_data$Link  # Keep as is if the URL is missing
   )
   
+  # Function to extract numeric part from the target string
+  extract_number <- function(target) {
+    as.numeric(sub("TARGET\\s*(\\d+).*", "\\1", target))
+  }
+  
   # Populate the filter dropdowns with unique values from Main.KM.GBF.Target and Target.Audience
   observe({
+    targets <- unique(case_studies_data$`Main KM-GBF Target`)
+    
+    # Extract numeric part and sort
+    sorted_targets <- targets[order(sapply(targets, extract_number))]
+    
     updateSelectInput(session, "filterTarget",
-                      choices = c("", unique(case_studies_data$`Main KM-GBF Target`)),
+                      choices = c("", sorted_targets),
                       selected = "")
   })
   
@@ -246,20 +256,24 @@ server <- function(input, output, session) {
                       selected = "")
   })
   
+  
   # Reactive expression to handle filtering
   filtered_data <- reactive({
     data <- case_studies_data
     
+    # Filter by Main KM-GBF Target if selected
     if (!is.null(input$filterTarget) && input$filterTarget != "") {
       data <- data[data$`Main KM-GBF Target` == input$filterTarget, ]
     }
     
+    # Filter by Target Audience if selected
     if (!is.null(input$filterAudience) && input$filterAudience != "") {
       data <- data[data$`Target Audience` == input$filterAudience, ]
     }
     
     return(data)
   })
+  
   
   format_data_table <- function(data) {
     datatable(
