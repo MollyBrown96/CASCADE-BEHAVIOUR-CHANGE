@@ -168,7 +168,7 @@ ui <- fluidPage(
              
              h4("Here are resources to get started with behaviour change for biodiversity conservation:"),
              
-             h5("How do I design a behaviour change intervention?"),
+             h3("How do I design a behaviour change intervention?"),
              tags$ul(
                tags$li(tags$a(href = "https://www.bi.team/publications/behavior-change-for-nature-a-behavioral-science-toolkit-for-practitioners/", target = "_blank", "Behavior Change For Nature: A Behavioral Science Toolkit for Practitioners (2019)")),
                tags$li(tags$a(href = "https://behavior.rare.org/resources/behavior-change-levers/", target = "_blank", "Levers of Behavior Change: A Guide to the Science and Applications (2024)")),
@@ -178,7 +178,7 @@ ui <- fluidPage(
                
                ),
              
-             h5("How do I evaluate a behaviour change intervention?"),
+             h3("How do I evaluate a behaviour change intervention?"),
              tags$ul(
                tags$li(tags$a(href = "https://doi.org/10.1177/1524500417734806", target = "_blank", "Does It Work for Biodiversity? Experiences and Challenges in the Evaluation of Social Marketing Campaigns (2017)")), # Social marketing resource
                tags$li(tags$a(href = "https://prevention-collaborative.org/wp-content/uploads/2021/08/Copy-of-Soul_City_Institute_2013-1.pdf", target ="_blank", "Edutainment: Using stories & media for social action and behaviour change (2013)")), # Education resource
@@ -188,7 +188,7 @@ ui <- fluidPage(
                tags$li(tags$a(href = "https://www.researchgate.net/publication/318394998_Green_Nudging_A_discussion_and_preliminary_evaluation_of_nudging_as_an_environmental_policy_instrument?channel=doi&linkId=596766c8458515e9af9ea123&showFulltext=true", target = "_blank", "Green Nudging: A discussion and preliminary evaluation of nudgingas an environmental policy instrument (2017)")), # Green Nudging for Policy
              ),
              
-             h5("Where can I find further evidence of behaviour change interventions?"),
+             h3("Where can I find further evidence of behaviour change interventions?"),
              tags$ul(
                tags$li(tags$a(href = "https://changewildlifeconsumers.org/", target = "_blank", "TRAFFIC - Change Wildlife Consumers")),
                tags$li(tags$a(href = "https://behavior.rare.org/resources/", target = "_blank", "RARE - Center for Behavior & the Environment")),
@@ -200,7 +200,7 @@ ui <- fluidPage(
                
                ),
              
-             h5("Where can I find course on behaviour change interventions?"),
+             h3("Where can I find a training course on behaviour change?"),
              tags$ul(
                tags$li(tags$a(href = "https://behavior.rare.org/training/", target = "_blank", "Training - Behavior Change for the Environment - RARE")),
                tags$li(tags$a(href = "https://breakthroughactionandresearch.org/resource-library/social-and-behavior-change-101-course/", target = "_blank", "Social and Behavior Change 101: An Introduction - Breakthrough Action + Research for Social & Behaviour Change")),
