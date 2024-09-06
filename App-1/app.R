@@ -183,7 +183,8 @@ ui <- fluidPage(
                tags$li(tags$a(href = "https://prevention-collaborative.org/wp-content/uploads/2021/08/Copy-of-Soul_City_Institute_2013-1.pdf", target ="_blank", "Edutainment: Using stories & media for social action and behaviour change")), # Education resource
                tags$li(tags$a(href = "https://spatialagent.org/GWPBehaviourChange/", target = "_blank", "Behavior Change for Wildlife Conservation")), # e-library for BC led by GEF WB
                tags$li(tags$a(href = "https://breakthroughactionandresearch.org/resource-library/social-and-behavior-change-monitoring-guidance/#toggle-id-4", target = "_blank", "Social and Behavior Monitoring Guidance")), # SBC Monitoring by Breakthrough ACTION
-               tags$li(tags$a(href = "https://thecompassforsbc.org/how-to-guide/how-to-use-a-theory-of-change-to-monitor-and-evaluate-social-and-behavior-change-programs", target = "_blank", "How to Use a Theory of Change to Monitor and Evaluate Social and Behavior Change Programs")), # ToC for SBC Monev
+               tags$li(tags$a(href = "https://thecompassforsbc.org/how-to-guide/how-to-use-a-theory-of-change-to-monitor-and-evaluate-social-and-behavior-change-programs", target = "_blank", "How to Use a Theory of Change to Monitor and Evaluate Social and Behavior Change Programs")), # ToC for SBC M&E
+               tags$li(tags$a(href = "https://www.researchgate.net/publication/318394998_Green_Nudging_A_discussion_and_preliminary_evaluation_of_nudging_as_an_environmental_policy_instrument?channel=doi&linkId=596766c8458515e9af9ea123&showFulltext=true", target = "_blank", "Green Nudging: A discussion and preliminary evaluation of nudgingas an environmental policy instrument")), # Green Nudging for Policy
              ),
              
              h5("Where can I find further evidence of behaviour change interventions?"),
