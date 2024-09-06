@@ -170,12 +170,13 @@ ui <- fluidPage(
              
              h5("How do I design a behaviour change intervention?"),
              tags$ul(
-               tags$li(tags$a(href = "https://www.bi.team/publications/behavior-change-for-nature-a-behavioral-science-toolkit-for-practitioners/", target = "_blank", "Behavior Change For Nature: A Behavioral Science Toolkit for Practitioners")),
-               tags$li(tags$a(href = "https://behavior.rare.org/resources/behavior-change-levers/", target = "_blank", "Levers of Behavior Change: A Guide to the Science and Applications")),
-               tags$li(tags$a(href = "https://www.behaviourchangewheel.com/", target = "_blank", "The Behaviour Change Wheel")),
-               tags$li(tags$a(href = "https://www.behaviourchange.net/docs/pin-2017-behaviour-change-toolkit_mail.pdf", target = "_blank", "Behaviour Change Toolkit: for International Development Practitioners")),
-               tags$li(tags$a(href = "https://www.changewildlifeconsumers.org/change/behaviour-change-for-conservation-online-course/", target = "_blank", "Behaviour Change for Conservation: Online Course"))
-             ),
+               tags$li(tags$a(href = "https://www.bi.team/publications/behavior-change-for-nature-a-behavioral-science-toolkit-for-practitioners/", target = "_blank", "Behavior Change For Nature: A Behavioral Science Toolkit for Practitioners (2019)")),
+               tags$li(tags$a(href = "https://behavior.rare.org/resources/behavior-change-levers/", target = "_blank", "Levers of Behavior Change: A Guide to the Science and Applications (2024)")),
+               tags$li(tags$a(href = "https://www.behaviourchangewheel.com/", target = "_blank", "The Behaviour Change Wheel (2014)")),
+               tags$li(tags$a(href = "https://www.behaviourchange.net/docs/pin-2017-behaviour-change-toolkit_mail.pdf", target = "_blank", "Behaviour Change Toolkit: for International Development Practitioners (2017)")),
+               tags$li(tags$a(href = "https://www.thensmc.com/content/nsmc-benchmark-criteria-0", target = "_blank", "National Social Marketing Centre (NSMC) Benchmark Criteria (2017)")),
+               
+               ),
              
              h5("How do I evaluate a behaviour change intervention?"),
              tags$ul(
@@ -189,20 +190,22 @@ ui <- fluidPage(
              
              h5("Where can I find further evidence of behaviour change interventions?"),
              tags$ul(
-               tags$li(tags$a(href = "https://changewildlifeconsumers.org/", target = "_blank", "Change Wildlife Consumers")),
-               tags$li(tags$a(href = "https://behavior.rare.org/resources/", target = "_blank", "Center for Behavior & the Environment (RARE)")),
-               tags$li(tags$a(href = "https://www.bi.team/our-work/publications/", target = "_blank", "Behavioural Insights Team")),
-               tags$li(tags$a(href = "https://www.usaidrdw.org/resources/consumer-demand-reduction", target = "_blank", "USAID Reducing Demand for Wildlife")),
-               tags$li(tags$a(href = "https://www.sbcguidance.org/", target = "_blank", "UNICEF Social + Behavior Change")),
-               tags$li(tags$a(href = "https://thedecisionlab.com/biases", target = "_blank", "Cognitive Biases: A list of the most relevant biases in behavioral economics")),
-             ),
+               tags$li(tags$a(href = "https://changewildlifeconsumers.org/", target = "_blank", "TRAFFIC - Change Wildlife Consumers")),
+               tags$li(tags$a(href = "https://behavior.rare.org/resources/", target = "_blank", "RARE - Center for Behavior & the Environment")),
+               tags$li(tags$a(href = "https://www.bi.team/our-work/publications/", target = "_blank", "Nesta/UK Government - Behavioural Insights Team")),
+               tags$li(tags$a(href = "https://www.usaidrdw.org/resources/consumer-demand-reduction", target = "_blank", "USAID - Reducing Demand for Wildlife: Consumer Demand Reduction")),
+               tags$li(tags$a(href = "https://www.sbcguidance.org/", target = "_blank", "UNICEF - Social + Behavior Change")),
+               tags$li(tags$a(href = "https://thedecisionlab.com/biases", target = "_blank", "The Decision Lab - Cognitive Biases: A list of the most relevant biases in behavioral economics")),
+               tags$li(tags$a(href = "http://www.thensmc.com/resources", target = "_blank", "National Social Marketing Centre (NSMC) - Social Marketing Resources")),
+               
+               ),
              
              h5("Where can I find course on behaviour change interventions?"),
              tags$ul(
                tags$li(tags$a(href = "https://behavior.rare.org/training/", target = "_blank", "Training - Behavior Change for the Environment - RARE")),
-               tags$li(tags$a(href = "https://breakthroughactionandresearch.org/resource-library/social-and-behavior-change-101-course/", target = "_blank", "Social and Behavior Change 101: An Introduction")),
+               tags$li(tags$a(href = "https://breakthroughactionandresearch.org/resource-library/social-and-behavior-change-101-course/", target = "_blank", "Social and Behavior Change 101: An Introduction - Breakthrough Action + Research for Social & Behaviour Change")),
                tags$li(tags$a(href = "https://agora.unicef.org/course/info.php?id=35185", target = "_blank", "Social and Behaviour Change (SBC) Theory and Practice - UNICEF")),
-               tags$li(tags$a(href = "https://climate.bds.com/behavior-change-for-climate-action-101-3-month-subscription-2", target = "_blank", "Behavior Change for Climate Action 101")),
+               tags$li(tags$a(href = "https://climate.bds.com/behavior-change-for-climate-action-101-3-month-subscription-2", target = "_blank", "Behavior Change for Climate Action 101 - Center for Behavior and Climate")),
                tags$li(tags$a(href = "https://www.changewildlifeconsumers.org/change/behaviour-change-for-conservation-online-course/", target = "_blank", "Behaviour Change for Conservation - TRAFFIC")),
              ),
              
